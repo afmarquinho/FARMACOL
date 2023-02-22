@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="textcenter">REPORTE DE VENTAS FARMACOL 2022</h1>
+    </header>
+    <section>
+      <article class="article1">
+        <form action="">
+          <div class="form__container">
+            <div class="nombre__container child">
+              <label for="nombre">Nombre Vendedor</label>
+              <input id="nombre" type="text" />
+            </div>
+            <div class="zone__container">
+              <label for="zona">Zona</label>
+              <select id="zone">
+                <option value="">Seleccione</option>
+                <option value="Costa">Costa</option>
+                <option value="Centro">Centro</option>
+                <option value="Oriente">Oriente</option>
+              </select>
+            </div>
+            <div class="city__container">
+              <label for="city">Ciudad</label>
+              <select id="city">
+                <option value="">Seleccione</option>
+                <option value="armenia">Armenia</option>
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="bogota">Bogotá</option>
+                <option value="bucaramanga">Bucaramanga</option>
+                <option value="cali">Cali</option>
+                <option value="Cartagena">Cartagena</option>
+                <option value="cucuta">Cúcuta</option>
+                <option value="ibague">Ibagué</option>
+                <option value="manizales">Manizales</option>
+                <option value="medellin">Medellín</option>
+                <option value="neiva">Neiva</option>
+                <option value="pereira">Pereira</option>
+                <option value="Riohacha">Riohacha</option>
+                <option value="Santa Marta">Santa Marta</option>
+                <option value="tunja">Tunja</option>
+                <option value="villavicencio">Villavicencio</option>
+              </select>
+            </div>
+            <div class="ordenar__container">
+              <label for="ordenar">Ordenar</label>
+              <select id="ordenar">
+                <option value="">Seleccione</option>
+                <option value="ascendente">Ascendente</option>
+                <option value="descendente">Descendente</option>
+              </select>
+            </div>
+            <div class="tipo__container">
+              <label for="canal">Canal</label>
+              <select id="canal">
+                <option value="">Seleccione</option>
+                <option value="institucional">Institucional</option>
+                <option value="cadena">Cadena</option>
+                <option value="mayorista">Mayorista</option>
+                <option value="retail">Retail</option>
+              </select>
+            </div>
+            <div class="ventaminima__container">
+              <label for="ventaminima">Venta Mínima</label>
+              <select id="ventaminima">
+                <option value="">Seleccione</option>
+                <option value="1">1.000.000</option>
+                <option value="30">30.000.000</option>
+                <option value="60">60.000.000</option>
+              </select>
+            </div>
+            <div class="ventamaxima__container">
+              <label for="ventamaxima">Venta Máxima</label>
+              <select id="ventamaxima">
+                <option value="">Seleccione</option>
+                <option value="30">30.000.000</option>
+                <option value="60">60.000.000</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </article>
+      <article>
+        <h2 class="textcenter">Resultado de Búsqueda</h2>
+        <p class="textcenter resuladopesos">*Resultados en Millones de pesos COP</p>
+        <div class="resultado__container"></div>
+      </article>
+    </section>
+    <footer></footer>
+    <script src="bbdd.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

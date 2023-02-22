@@ -1,0 +1,76 @@
+:root {
+  --primario: #444243;
+  --secundario: #e4c5eb;
+  --tercero: #d4c4d4;
+  --cuarto: #c7dee4;
+  --fuentePrincipal: "Lato", sans-serif;
+  --fuenteLogo: "Lobster", cursive;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* UTILIDADES */
+.textcenter {
+  text-align: center;
+}
+.negrita {
+  font-weight: bold;
+}
+.ventatotal {
+  font-size: 2rem;
+}
+.fondorojo{
+  background-color: red;
+  padding: 0.5rem;
+}
+
+/* GLOBALES */
+body {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: var(--fuentePrincipal);
+}
+h2 {
+  color: var(--primario);
+}
+.resuladopesos {
+  font-size: 0.95rem;
+}
+
+header {
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--primario);
+  color: var(--secundario);
+}
+@media (min-width: 768px) {
+  header {
+    font-size: 2rem;
+  }
+}
+
+.article1 {
+  background-color: var(--tercero);
+}
+
+.form__container {
+  display: grid;
+  grid-template-columns: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.5rem;
+}
+@media (min-width: 1280px) {
+  .form__container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
